@@ -95,7 +95,7 @@ const Main = () => {
   }, [isLoading]);
 
   const fetchPins = async page => {
-    // 처음 메인 진입시 핀 정보 GET
+    // 처음 메인 진입 시 핀 정보 GET
     const res = await fetch(
       `${API.MAIN}?offset=${page}&limit=20`,
       //`https://api.unsplash.com/photos/?client_id=${UNSPLASH_API_KEY}&page=${page}&per_page=10`, //mockupData
